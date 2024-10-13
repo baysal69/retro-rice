@@ -5,17 +5,22 @@ git clone https://github.com/grassmunk/Chicago95 --depth 1
 cd Chicago95
 git fetch --unshallow
 cd ..
+echo "configuring conky"
 sudo cp -r conky.conf /etc/conky/
+echo "configuring autostart for conky and findex"
 mkdir ~/.config/autostart
 sudo cp -r conky.desktop ~/.config/autostart/
+echo "configuring neofetch"
 sudo cp -r punpun /etc/
 sudo cp -r config.conf ~/.config/neofetch/
 sudo cp -r neofetch /usr/bin/
 sudo cp -r gtk.css ~/.config/gtk-3.0/
+echo "aliasing neofetch"
 sudo alias neofetch='neofetch --ascii_color 3 --source /etc/punpun'
 
 
-
+echo "logging off to refresh"
+sleep 2
 cd /usr/share/xsessions
 sudo mv pop.desktop pop.desktop1
 sudo mv xfce.desktop pop.desktop
