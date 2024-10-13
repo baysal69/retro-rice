@@ -1,9 +1,21 @@
+echo "installing dependencies"
+sleep 2
+sudo chmod 777 dependencies/dependencies-installer.sh
+./dependencies/dependencies-installer.sh
 echo "cloning chicago95"
 sleep 3
 sudo git config --global http.version HTTP/1.1
 git clone https://github.com/grassmunk/Chicago95 --depth 1
 cd Chicago95
 git fetch --unshallow
+cd ..
+sleep 3
+echo "cloning findex"
+git clone https://github.com/mdgaziur/findex
+echo "installing findex"
+cd findex
+sudo chmod 777 installer.sh
+./installer.sh
 cd ..
 echo "configuring conky"
 sudo cp -r conky.conf /etc/conky/
@@ -12,11 +24,12 @@ mkdir ~/.config/autostart
 sudo cp -r conky.desktop ~/.config/autostart/
 echo "configuring neofetch"
 sudo cp -r punpun /etc/
+echo "copying configs"
 sudo cp -r config.conf ~/.config/neofetch/
 sudo cp -r neofetch /usr/bin/
 sudo cp -r gtk.css ~/.config/gtk-3.0/
 echo "aliasing neofetch"
-sudo alias neofetch='neofetch --ascii_color 3 --source /etc/punpun'
+sudo alias neofetch='neofetch --ascii_colors 3 --source /etc/punpun'
 
 
 echo "logging off to refresh"
