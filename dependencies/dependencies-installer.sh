@@ -20,7 +20,7 @@ sleep 3
 sudo apt -y install conky
 echo "installing gtk3"
 sleep 3
-sudo apt-get -y install gtk3
+sudo apt-get -y install gtk-3.0
 echo "installing libkeybinder3"
 sleep 3
 sudo apt-get -y install libkeybinder-3.0
