@@ -13,10 +13,7 @@ sleep 3
 echo "cloning findex"
 git clone https://github.com/mdgaziur/findex
 echo "installing findex"
-cd findex
-sudo chmod 777 installer.sh
-./installer.sh
-cd ..
+sudo chmod 777 findex/installer.sh && ./findex/installer.sh
 echo "configuring conky"
 sudo cp -r conky.conf /etc/conky/
 echo "configuring autostart for conky and findex"
@@ -29,7 +26,7 @@ sudo cp -r config.conf ~/.config/neofetch/
 sudo cp -r neofetch /usr/bin/
 sudo cp -r gtk.css ~/.config/gtk-3.0/
 echo "aliasing neofetch"
-sudo alias neofetch='neofetch --ascii_colors 3 --source /etc/punpun'
+echo "alias neofetch='neofetch --ascii_colors 3 --source /etc/punpun'" >> ~/.bashrc
 
 
 echo "logging off to refresh"
