@@ -10,10 +10,10 @@ cd Chicago95
 git fetch --unshallow
 cd ..
 sleep 3
-echo "cloning findex"
-git clone https://github.com/mdgaziur/findex
-echo "installing findex"
-sudo chmod 777 findex/installer.sh && ./findex/installer.sh
+#echo "cloning findex"
+#git clone https://github.com/mdgaziur/findex
+#echo "installing findex"
+#sudo chmod 777 findex/installer.sh && ./findex/installer.sh
 echo "configuring conky"
 sudo cp -r conky.conf /etc/conky/
 echo "configuring autostart for conky and findex"
@@ -30,7 +30,7 @@ echo "alias neofetch='neofetch --ascii_colors 3 --source /etc/punpun'" >> ~/.bas
 
 
 echo "logging off to refresh"
-sleep 2
+sleep 10
 cd /usr/share/xsessions
 sudo mv pop.desktop pop.desktop1
 sudo mv xfce.desktop pop.desktop

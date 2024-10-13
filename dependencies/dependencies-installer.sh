@@ -26,7 +26,7 @@ sleep 3
 sudo apt-get -y install libkeybinder-3.0
 echo "installing rust"
 sleep 3
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl https://sh.rustup.rs -ssf | sh -s -- -y
 echo "installing cargo"
 sleep 3
 sudo apt -y install cargo
