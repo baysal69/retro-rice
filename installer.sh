@@ -10,10 +10,13 @@ cd Chicago95
 git fetch --unshallow
 cd ..
 sleep 3
-#echo "cloning findex"
-#git clone https://github.com/mdgaziur/findex
-#echo "installing findex"
-#sudo chmod 777 findex/installer.sh && ./findex/installer.sh
+echo "cloning findex"
+git clone https://github.com/mdgaziur/findex
+echo "installing findex"
+sudo chmod 777 findex/installer.sh
+cd findex
+./installer.sh
+cd ..
 echo "configuring conky"
 sudo cp -r conky.conf /etc/conky/
 echo "configuring autostart for conky and findex"
