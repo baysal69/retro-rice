@@ -22,6 +22,7 @@ sudo cp -r conky.desktop ~/.config/autostart/
 echo "configuring neofetch"
 sudo cp -r punpun /etc/
 echo "copying configs"
+mkdir ~/.config/neofetch
 sudo cp -r config.conf ~/.config/neofetch/
 sudo cp -r neofetch /usr/bin/
 sudo cp -r gtk.css ~/.config/gtk-3.0/
@@ -29,9 +30,9 @@ echo "aliasing neofetch"
 echo "alias neofetch='neofetch --ascii_colors 3 --source /etc/punpun'" >> ~/.bashrc
 
 
-#echo "logging off to refresh"
-#sleep 10
-#cd /usr/share/xsessions
-#sudo mv pop.desktop pop.desktop1
-#sudo mv xfce.desktop pop.desktop
-#loginctl terminate-user $USER
+echo "logging off to refresh"
+sleep 5
+cd /usr/share/xsessions
+sudo mv pop.desktop pop.desktop1
+sudo mv xfce.desktop pop.desktop
+loginctl terminate-user $USER
