@@ -6,7 +6,7 @@ sudo apt-get -y install xfce4
 echo "installing gtk3"
 sleep 3
 sudo apt-get -y install gtk+3.0
-echo "installing gtk2-ingines-pixbuf"
+echo "installing gtk2-engines-pixbuf"
 sleep 3
 sudo apt-get -y install gtk2-engines-pixbuf
 echo "installing xfce panel profiles"
