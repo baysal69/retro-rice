@@ -35,6 +35,7 @@ and let it cook
   - > go through the installation process
 - go to wallpaper folder
   - change it to the one inside
+- change terminal background color to black
 - open panel
   - go to display tab
   - untick lock panel
