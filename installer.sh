@@ -29,9 +29,9 @@ echo "aliasing neofetch"
 echo "alias neofetch='neofetch --ascii_colors 3 --source /etc/punpun'" >> ~/.bashrc
 
 
-echo "logging off to refresh"
-sleep 10
-cd /usr/share/xsessions
-sudo mv pop.desktop pop.desktop1
-sudo mv xfce.desktop pop.desktop
-loginctl terminate-user $USER
+#echo "logging off to refresh"
+#sleep 10
+#cd /usr/share/xsessions
+#sudo mv pop.desktop pop.desktop1
+#sudo mv xfce.desktop pop.desktop
+#loginctl terminate-user $USER
