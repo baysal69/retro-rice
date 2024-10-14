@@ -26,8 +26,8 @@ echo "configuring neofetch"
 sudo cp -r punpun /etc/
 echo "copying configs"
 mkdir ~/.config/neofetch
-echo "printf '\e]11;#000000\e\\'" >> ~/.bashrc
-echo "printf '\e[0;0;0m'" >> ~/.bashrc
+#echo "printf '\e]11;#000000\e\\'" >> ~/.bashrc
+#echo "printf '\e[0;0;0m'" >> ~/.bashrc
 sudo cp -r config.conf ~/.config/neofetch/
 sudo cp -r neofetch /usr/bin/
 sudo cp -r gtk.css ~/.config/gtk-3.0/
