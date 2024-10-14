@@ -25,7 +25,7 @@ this only works on Debian based distros i guess?
 and let it cook
 > continue setting up in Set Up section
   ### Manual Installaation
-> hell nah just install the dependencies and other stuff on ur own
+> hell nah nigga mrid fkrk asat sir downloadi dk l9lawi rask
 ## Set Up
 - on the login screen click on the bottom right button
   - select XFCE
